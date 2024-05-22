@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Interactivo de la Universidad</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="map-container">
+        <img src="university-map.png" alt="Mapa de la Universidad" id="university-map">
+        <svg id="routes" class="routes" xmlns="http://www.w3.org/2000/svg"></svg>
+    </div>
+    <div class="controls">
+        <div class="control-group">
+            <label for="start">Punto de partida:</label>
+            <select id="start">
+                <option value="lobby">Lobby</option>
+                <option value="cafeteria">Cafetería</option>
+                <option value="biblioteca">Biblioteca</option>
+                <option value="laboratorios">Laboratorios</option>
+                <option value="redes">Redes</option>
+                <option value="a">Bloque A</option>
+                <option value="b">Bloque B</option>
+                <option value="c">Bloque C</option>
+                <!-- Más opciones aquí -->
+            </select>
+        </div>
+        <div class="control-group">
+            <label for="end">Destino:</label>
+            <select id="end">
+                <option value="lobby">Lobby</option>
+                <option value="cafeteria">Cafetería</option>
+                <option value="biblioteca">Biblioteca</option>
+                <option value="laboratorios">Laboratorios</option>
+                <option value="redes">Redes</option>
+                <option value="a">Bloque A</option>
+                <option value="b">Bloque B</option>
+                <option value="c">Bloque C</option>
+                <!-- Más opciones aquí -->
+            </select>
+        </div>
+        <img src="boton.png" alt="Mostrar Ruta" id="find-route">
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
